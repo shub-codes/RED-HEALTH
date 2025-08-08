@@ -11,6 +11,12 @@ This is a CLI-based Python script that allocates a total bonus amount among a gr
 ## Features
 
 - **Modular Design:** The project is split into three main modules: `Normalizer`, `Allocator`, and `Main` for clear separation of concerns.
+    ├── src/
+    │   ├── allocator.py
+    │   └── normalizer.py
+    ├── main.py
+    ├── agents.json
+    └── README.md
 - **Min-Max Normalization:** All raw agent metrics are normalized to a 0-1 scale before scoring.
 - **Weighted Scoring:** A composite score is calculated using pre-defined weightages for each metric.
     1. Performance(w=0.25) is highest metric with defined legibility
