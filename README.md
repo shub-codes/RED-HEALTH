@@ -11,12 +11,12 @@ This is a CLI-based Python script that allocates a total bonus amount among a gr
 ## Features
 
 - **Modular Design:** The project is split into three main modules: `Normalizer`, `Allocator`, and `Main` for clear separation of concerns.
-    ├── src/
-    │   ├── allocator.py
-    │   └── normalizer.py
-    ├── main.py
-    ├── agents.json
-    └── README.md
+    1. src/
+    │   a. allocator.py
+    │   b. normalizer.py
+    2. main.py
+    3. agents.json
+    4. README.md
 - **Min-Max Normalization:** All raw agent metrics are normalized to a 0-1 scale before scoring.
 - **Weighted Scoring:** A composite score is calculated using pre-defined weightages for each metric.
     1. Performance(w=0.25) is highest metric with defined legibility
@@ -30,7 +30,7 @@ This is a CLI-based Python script that allocates a total bonus amount among a gr
     1. Bonus is calculated as multiplier*(agent_score)/(total score of all agents)
     2. multiplier= 1 for top 70 percentile, 0.6 for 30-70 percentile and 0.3 for botton 30 percentile.
 - **Justification:** Each bonus allocation includes a justification based on the agent's percentile rank.
--** Tester**- it contains 3 test cases 
+- **Tester** it contains 3 test cases 
     1. general case- varied parameters
     2. Edge case- single agent
     3. All agents same: everyagent has same parameter
